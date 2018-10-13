@@ -33,7 +33,7 @@
                 <input type="hidden" name="amount" value="{{ $course->price * 100 }}" />
                 <script
                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="{{ env('PUB_STRIPE_API_KEY') }}"
+                    data-key="pk_test_jXFu3lefM30H4ulYfve6q1My"
                     data-amount="{{ $course->price * 100 }}"
                     data-currency="usd"
                     data-name="Quick LMS"
