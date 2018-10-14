@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Course;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {

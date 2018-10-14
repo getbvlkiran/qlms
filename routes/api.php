@@ -15,4 +15,6 @@ Route::group(['prefix' => '/v1', 'namespace' => 'Api', 'as' => 'api.'], function
     Route::get('/{course_id}/{slug}', ['uses' => 'LessonsController@show', 'as' => 'lessons.show']);
     Route::post('/{slug}/test', ['uses' => 'LessonsController@test', 'as' => 'lessons.test']);
   });
+
+  Route::post('login', 'AuthController@login');
 });

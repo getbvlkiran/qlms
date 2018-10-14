@@ -7,6 +7,7 @@ use App\Question;
 use App\QuestionsOption;
 use App\TestsResult;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class LessonsController extends Controller
 {
