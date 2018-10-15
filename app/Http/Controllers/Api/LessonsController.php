@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Lesson;
 use App\Question;
 use App\QuestionsOption;
@@ -54,6 +55,7 @@ class LessonsController extends Controller
         $lesson = Lesson::where('slug', $lesson_slug)->firstOrFail();
         $answers = [];
         $test_score = 0;
+        // dd($request->get('questions'));
         foreach ($request->get('questions') as $question_id => $answer_id) {
             $question = Question::find($question_id);
             $correct = QuestionsOption::where('question_id', $question_id)
